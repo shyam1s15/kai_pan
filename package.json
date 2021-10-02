@@ -47,5 +47,9 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "Bhakti Sanghani",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "no"
+  }
 }

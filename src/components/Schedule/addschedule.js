@@ -1,7 +1,7 @@
 import React from 'react'
-import ReactBootstrap, {Form,Col,Button} from 'react-bootstrap';
+import ReactBootstrap, {Form,Col,Button,Row} from 'react-bootstrap';
 
-function Schedule(){
+function Schedulee(){
     return(
 <Form>
   <Form.Group as={Row} className="mb-3" controlId="formPlaintext">
@@ -59,4 +59,4 @@ function Schedule(){
     );
 }
 
-export default Schedule;
+export default Schedulee;

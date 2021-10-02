@@ -5,13 +5,19 @@ import ReactBootstrap, {Navbar,NavDropdown,Container,Nav,Button} from 'react-boo
 function Navbarr() {
     return (
         <>
-<Navbar bg="dark" expand="lg">
+<Navbar bg="light" expand="lg">
   <Container>
     <Navbar.Brand href="/">SPORTIZA</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-    <Nav.Link href="Tournaments/addtournament.js">Tournament</Nav.Link>
-      <Nav.Link href="Tournaments/tournamentlist.js">View Tournament</Nav.Link>
+    <NavDropdown title="Tournament" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/addtournament">Add</NavDropdown.Item>
+          <NavDropdown.Item href="/tournamentlist">View</NavDropdown.Item>
+    </NavDropdown>
+    <NavDropdown title="Schedule" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/addschedule">Add</NavDropdown.Item>
+          <NavDropdown.Item href="/schedulelist">View</NavDropdown.Item>
+    </NavDropdown>
       <Nav.Link href="#">Logout</Nav.Link>
     </Navbar.Collapse>
   </Container>

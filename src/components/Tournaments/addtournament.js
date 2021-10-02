@@ -3,8 +3,15 @@ import React, { Component } from 'react';
 import ReactBootstrap, {Form,Col,Button,Row} from 'react-bootstrap';
 
 function Addtournament(){
+  
     return(
-        <Form>
+        <form
+          onSubmit={
+            console.log("shyam baba")
+          }
+          method="get"
+          action="/tournamentlist"
+        >
   <Form.Group as={Row} className="mb-3" controlId="formPlaintext">
     <Form.Label column sm="2">
       Game Name
@@ -88,7 +95,7 @@ function Addtournament(){
 <Button variant="primary" type="submit">
     Submit
   </Button>
-</Form>
+</form>
     );
 }
 
